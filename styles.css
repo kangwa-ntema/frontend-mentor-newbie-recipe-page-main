@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "Outfit-Black";
+    src: url("./assets/fonts/outfit/static/Outfit-Black.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Bold";
+    src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-ExtraBold";
+    src: url("./assets/fonts/outfit/static/Outfit-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-ExtraLight";
+    src: url("./assets/fonts/outfit/static/Outfit-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Light";
+    src: url("./assets/fonts/outfit/static/Outfit-Light.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Medium";
+    src: url("./assets/fonts/outfit/static/Outfit-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-SemiBold";
+    src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Thin";
+    src: url("./assets/fonts/outfit/static/Outfit-Thin.ttf");
+}
+
+@font-face {
+    font-family: "YoungSerif-Regular";
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+:root {
+  --clr-nutmeg: hsl(14, 45%, 36%);
+  --clr-dark-raspberry: hsl(332, 51%, 32%);
+  --clr-dark-raspberry-700: hsl(332, 51%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit-Regular";
+}
+
+.home_page {
+  padding: 0 2rem;
+}
+
+.hero_image {
+    background-image: url("./assets/images/image-omelette.jpeg");
+    background-color: gray;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem;
+}
+
+.heading {
+  font-family: "YoungSerif-Regular";
+  margin-block: 2rem;
+}
+
+.subheading {
+  line-height: 1.5;
+  margin-block: 2rem;
+}
+
+.preparation_time_container {
+  margin-block: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--clr-dark-raspberry-700);
+}
+
+.preparation_time_title {
+    font-family: "Outfit-Medium";
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation_process_list {
+  padding: 1rem;
+  line-height: 2;
+}
+
+.preparation_process {
+  padding-left: 1rem;
+}
+
+.preparation_process_label{
+    font-family: "Outfit-Bold";
+}
+
+.ingredients_container {
+  margin-block: 2rem;
+}
+
+.ingredients_title {
+  color: var(--clr-nutmeg);
+  margin: 2rem 0 1rem;
+  font-family: "YoungSerif-Regular";
+}
+
+.ingredients_list {
+  padding: 0 1rem;
+  line-height: 2;
+}
+
+.ingredients {
+  padding-left: 1rem;
+}
+
+.instructions_container {
+  margin-block: 2rem;
+}
+
+.instructions_title {
+  font-family: "YoungSerif-Regular";
+  color: var(--clr-nutmeg);
+  margin: 2rem 0 1rem;
+}
+
+.instruction_title {
+  font-weight: bold;
+}
+
+.instruction_list {
+  padding: 0 1rem;
+  line-height: 1.5;
+}
+
+.instruction {
+  padding: 0 0 0.5rem 1rem;
+}
+
+.nutrition_container {
+  margin-block: 2rem;
+}
+
+.nutrition_title {
+  font-family: "YoungSerif-Regular";
+  color: var(--clr-nutmeg);
+  margin: 2rem 0 1rem;
+}
+
+.nutrition_subtitle {
+  line-height: 1.5;
+  margin-block: 1rem;
+}
+
+.nutrition_details p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 0.1rem solid black;
+  padding: 1rem;
+}
+
+.nutrition_details p span:nth-child(2) {
+  color: var(--clr-nutmeg);
+  font-family: "Outfit-Bold";
+}
+
+@media (min-width: 500px) {
+  body {
+    padding: 2rem;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .hero_image{
+    border-radius: 1rem;
+  }
+
+  .home_page {
+    padding: 0;
+  }
+}
